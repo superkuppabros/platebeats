@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Plate Beats</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="createscore.js"></script>
+  </head>
+
+  <body onload="idJump();">
+    <div id="container">
+      <div id="title">
+        <nav class="regular">
+          <ul>
+            <li><a href="" style="border-left-width:4px;">Home</a></li>
+            <li><a href="">Manual</a>
+              <ul>
+                <li><a href="./manual/player.html" target="_blank">Player</a></li>
+                <li><a href="./manual/creator.html" target="_blank">Creator</a></li>
+              </ul>
+            </li>
+            <li><a href="">Event</a>
+              <ul>
+                <li><a href="./event/pbaf18/index.html" target="_blank">PBAF18</a></li>
+              </ul>
+            </li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeZqk2DXGPkEr8zFZzFIHFz_XeUsp9y4tHUv9rjK4_Jqr-A3g/viewform?usp=sf_link" target="_blank">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>Plate Beats</h1>
+        (ver 3.1.2)
+      </div>
+      <div id="canvasParent">
+        <canvas id="canvas" width="350" height="400"></canvas>
+        <canvas id="layer1" width="350" height="400"></canvas>
+        <canvas id="layer2" width="350" height="400"></canvas>
+      </div>
+	    <div id="sentence">
+        <hr>
+        <p>Flash非使用の音楽ゲームです.<br>
+        Google Chrome,Firefoxで動作確認しております.<br>
+        プレイ時使用キー（左から）:SDF space JKL,リタイア:Esc,delete<br>
+        バージョン表記が異なる場合はキャッシュの削除をお試しください.<br>
+        その他詳しい遊び方はManualからご確認ください.<br>
+        特に作譜,投稿の際には必ずご一読ください.<br>
+        
+        <p>18/9/22<br>
+        バージョンを3.1.2に更新しました.<br>
+        TOPのレイアウトを変更しました.イベント譜面は左側のEVENTボタンから確認出来ます.</p>
+        
+        <p>18/9/22<br>
+        バージョンを3.1.1に更新しました.<br>
+        選曲画面およびハイスコアデータ周りのバグを修正しました.</p>
+        
+        <p>18/9/18<br>
+        バージョンを3.1.0に更新しました.<br>
+        データ構造の修正、Timing値の保存、投稿コメントの上限緩和、投稿時間の保存等を行いました.<br>
+        ある程度のデバッグは行っておりますが、不安定な可能性もございますので、譜面のセーブ等は必ず行うようお願いします.<br>
+        また、イベントページも更新・追記しましたのでそちらもよろしくお願いいたします.</p>
+        </p>
+        
+        <p>18/9/4<br>
+        バージョンを3.0.1に更新しました.<br>
+        更新点は作譜に関するバグの排除,パフォーマンスの改善等です.<br>
+        <br>
+        現在、Firefox以外のブラウザにおいて、Fadeinをかけた際に<b>音楽の開始位置がズレる</b>バグが確認されています.<br>
+        また、エディタ中での楽曲再生でも同様のズレを確認しました.<br>
+        具体的な発生条件等は現在調査中ですが、未だ不明です.<br>
+        ご迷惑をおかけしますが、発生した場合は適宜FirstNumで調整し、最後に直していただくようお願いいたします.<br>
+        </p>
+                
+        <p>18/8/24<br>
+        Manualなどのページの追加をしました.<br>
+        また、PlateBeats初のイベントを開催することにしましたので、ぜひご参加ください！<br>
+        詳細は<a href="./event/pbaf18/index.html">こちら</a>からどうぞ.(Eventからもご確認できます.)</p>
+
+        <p>18/8/22<br>
+        多鍵祭'18 参加譜面まとめ(敬称略)<br>
+        <a href = "https://platebeats.com/?id=54">Tropical Island</a> / SKB<br>
+        <a href = "https://platebeats.com/?id=55">幻影楽師達の音楽祭</a> / MFV2<br>
+        <a href = "https://platebeats.com/?id=56">11 in the ◇ (Bonus mix)</a> / chip<br>
+        <a href = "https://platebeats.com/?id=57">Annular solar eclipse (kwskmop remix)</a> / もっぺ<br>
+        <a href = "https://platebeats.com/?id=58">グリーン・ライト</a> / 神の毛＆MFV2<br>
+        <a href = "https://cw7.sakura.ne.jp/nfes18/index.html"><img src="graphic/banner.png" alt="多鍵祭'18"/></a><br>
+
+        <p>18/8/17<br>
+        ・リバース機能を追加しました.ConfigからReverseをONにするとノーツが下から上に流れます.<br>
+        ・オプション画面において音量設定が出来るようにしました.<br>
+        ・その他細かい点を修正しました.</p>
+
+        <p>18/6/23<br>
+        ・プレイの記録を残せるようにしました.<br>
+        AP:赤,FC:橙,SS:黄,S:青,既プレイ:灰 の星が表示されます.<br>
+        ・打鍵時に青白いエフェクトが出るようにしました.<br>
+        </p>
+
+        <p>不具合が発生した場合、まずはキャッシュの削除をお試しください.直らない場合はご相談ください.<br>
+        何かございましたら、上部のContactよりお気軽にご連絡ください.<br>
+        creator: SKB (@superkuppabros)<br>
+        mail: platebeats☆gmail.com ☆→@<br>
+        </p>
+        <hr>
+      </div>
+	  </div>
+  </body>
+</html>
