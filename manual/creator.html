@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>How to create PB's score</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="title">
+        <nav class="regular">
+          <ul>
+            <li><a href="../index.html" style="border-left-width:4px;" target="_blank">Home</a></li>
+            <li><a href="">Manual</a>
+              <ul>
+                <li><a href="player.html">Player</a></li>
+                <li><a href="">Creator</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Event</a>
+              <ul>
+                <li><a href="../event/pbaf18/index.html">PBAF18</a></li>
+              </ul>
+            </li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeZqk2DXGPkEr8zFZzFIHFz_XeUsp9y4tHUv9rjK4_Jqr-A3g/viewform?usp=sf_link" target="_blank">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>How to <span style="color:green;">create</span> PB's score</h1>
+        <hr>
+      </div>
+	    <div id="sentence">
+        <p>ここでは作譜の方法について説明します。</p>
+
+        <h2>ファイル選択画面</h2>
+        <div class="scene">
+          <img src="./img/file.png" alt="ファイル選択画面"/>
+          <p>上側のファイル選択からローカルの音楽ファイルを選びます。<br>
+          使用可能なファイルは10MB以内のmp3のみです。対応していないファイルを選ぶと先へ進めません。<br>
+          下側のファイル選択では製作途中の譜面ファイルを選択できます（後述）。<br>
+          <br>
+          <span style="color:red;">注意</span>：譜面を公開される場合、使用する音源は必ず作曲者などから許諾、確認を得たものを使用してください。<br>
+          公開した音源のトラブルに関しては、すべて自己責任にてお願いいたします。</p>
+        </div>
+
+        <h2>譜面制作画面</h2>
+        <div class="scene">
+          <div style="float:left; margin: 0px 10% 30px 10%;">
+            <img src="./img/create.png" alt="譜面制作画面" style="float:none; margin-left:0;"/><br>
+            <img src="./img/res.png" alt="リザルト画面" style="float:none; margin-left:0;"/>
+          </div>
+          <p>1.初期設定<br>
+          BPM（曲の速さ）とFirstNum（曲の開始時間、1/60秒単位）を設定します。数字を入力し、Changeを押すと反映されます。<br>
+          Enterキーで表示されている区間の音楽が流れるので、そちらも参考にしてください。<br>
+          <br>
+          2.ノーツの打ち込み<br>
+          <b>SDF GH</b>(赤) <b>JKL</b>で各キーを入力します。<b>↑↓</b>キーで打ち込み位置の変更、<b>←→</b>キーでページの変更が出来ます。<b>Shift+←→</b>で10ページの移動を行います。<br>
+          4分より細かいノーツを入力する場合、数字の<b>1~7</b>キーで変更できます。<br>
+          ページ全体の操作として、<b>C</b>でコピー、<b>X</b>で切り取り、<b>V</b>で貼り付けが可能です。<br>
+          <br>
+          3.セーブ<br>
+          Saveを押すと、クリップボードに制作結果が出力されます。txtファイルとして保存しておくと、この画面を消しても途中から始めることが可能です。<br>
+          逆に、セーブせずに閉じたり戻ったりしてしまうと、データが失われてしまうのでご注意ください。<br>
+          <br>
+          4.調整<br>
+          <b>Ctrl+↑↓</b>で、現在位置（赤線上）にあるノーツを移動して上書きします。<b>Shift+↑↓</b>では、ページ全体を移動させます。<br>
+          Fixボタンを使うとBPMやFirstNumの変更をそれ以降で独立して行えます。途中で速さが変わる場合この機能を使用します。<br>
+          <b>0</b>キーで現在の総ノーツ数と難易度を表示します。<br>
+          <br>
+          5.テストプレイ<br>
+          Testをクリック、またはTボタンでテストプレイに移行します。基本的に通常プレイと変わりません。キーは設定されているものが使えます。<br>
+          <b>95%</b>以上を取ることで登録画面に進めます。不足している場合は繰り返し練習しましょう。<br></p>
+          <h2></h2>
+        </div>
+
+        <h2 style="clear: both;">登録画面</h2>
+        <div class="scene">
+          <img src="./img/submit.png" alt="登録画面"/>
+          <p>Title: 曲名、Artist: 作曲者など、Creator: 作譜者をそれぞれ入力します。<br>
+          Passにはパスワードを入力します。再編集をする際などに使用してください。<br>
+          コメント欄は自由に記述してください。ただし、誹謗中傷等は最悪の場合削除の対象となりうるためお気をつけください。<br>
+          <br>
+          Applyを押すと、未入力の項目がなければ投稿、公開されます。その際ウィンドウからツイートをすることも可能です。</p>
+        </div>
+
+        <h2>編集画面</h2>
+        <div class="scene">
+          <img src="./img/modify.png" alt="編集画面"/>
+          <p>IDとPASSは登録したものをお使いください。<br>
+          <br>
+          revising information: 譜面などは変更せず、各種情報のみの変更する際に使用します。<br>
+          editing score: 譜面の変更を行えます。音源は変更できません。<br>
+          loading other files: 音源の変更を行えます。</p>
+        </div>
+
+        <h2></h2>
+        <hr>
+        <a href="#container">TOP</a>
+      </div>
+	  </div>
+  </body>
+</html>

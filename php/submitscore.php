@@ -50,6 +50,7 @@ if($_POST['chk'] == 'submitscore'){
     rename('../data/temp.txt',"../data/{$rid}.txt");
   }else{
     //echo "File has some problems.";
+    echo var_dump($_POST);
     echo $_FILES['audio']['size'];
   }
 }else{

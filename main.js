@@ -797,6 +797,8 @@ function result(score){
           head = "【 #PlateBeats #festa7_18 】";
         }else if(pack.music >= 1537959600000 && pack.music <= 1538233200000){
           head = "【 #PlateBeats #PBAF18 】";
+        }else if(pack.music >= 1577491200000 && pack.music <= 1577750400000){
+          head = "【 #PlateBeats #festa7_19_another 】";
         }else{
           head =  "【 #PlateBeats 】";
         }

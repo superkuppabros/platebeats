@@ -1,0 +1,150 @@
+body { 
+  background-image: url(img/bgpattern.jpg); 
+  text-align: center;
+}
+
+#container{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  /*height:940px;*/
+}
+
+#sentence{
+  width: 55%;
+  right: 10%;
+  text-align: left;
+  position: absolute;
+}
+
+h2{
+  color:navy;
+  font-size: 1.2em;
+  line-height:0.6em;
+  font-weight: normal;
+}
+
+.news{
+  border: solid 2px;
+  border-color: #696969;
+  border-radius: 8px;
+  padding-left: 4px;
+  margin-bottom: 15px;
+}
+
+nav{
+  background-color: transparent; /*#add8e6;*/
+  color:#fff;
+  text-align: center;
+}
+
+#menu{
+  background-color: transparent; /*#add8e6;*/
+  color:#fff;
+  text-align: center;
+  width:120px;
+  left:10%;
+  position: absolute;
+}
+
+nav ul{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+  width: 480px;
+  text-align: center;
+}
+
+nav li{
+  background-color: #add8e6;
+  width: 120px;
+}
+
+#menu ul{
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#menu li{
+  background-color: #f5da81;
+  width: 120px;
+}
+
+nav a, #menu a{ 
+  color:#ffffff;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	border-style:solid;
+	border-color:#a9a9a9;
+  border-width: 4px 4px 4px 0;
+	display: block;
+	text-decoration: none;
+}
+
+#menu a{
+  border-width: 0 4px 4px 4px;
+}
+
+nav li a::before,
+nav li a::after,
+#menu li a::before,
+#menu li a::after{
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+nav li a,
+nav li a::before,
+nav li a::after,
+#menu li a,
+#menu li a::before,
+#menu li a::after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+nav li a:hover,
+#menu li a:hover{
+ color:#c0c0c0;
+ background-color:#FFF;
+}
+
+nav li ul {
+  top: 45px;
+  width: 120px;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+}
+nav li ul li {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  width:100%;
+  margin-left: -4px;
+}
+
+nav li ul li a{
+  display: block;
+  border-width: 0 4px 4px 4px;
+  width: 124px;
+}
+
+nav li:hover > ul > li {
+  overflow: visible;
+  height: 45px;
+}
+
+

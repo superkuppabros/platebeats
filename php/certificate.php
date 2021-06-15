@@ -18,7 +18,7 @@ function modifyscore($id,$pwd){
   //接続終了
   $pdo = "";
   
-  if(password_verify($pwd,$password[0]['pwd']) || $pwd == 'pbkppbrs1313'){
+  if(password_verify($pwd,$password[0]['pwd'])){
     echo json_encode($result[0],JSON_UNESCAPED_UNICODE);
   }else{
     echo 'false';

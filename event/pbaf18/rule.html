@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Plate Beats Autumn Festival '18</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../system.js"></script>
+  </head>
+
+  <body onload="init();">
+    <div id="container">
+      <div id="title">
+        <nav class="regular">
+          <ul>
+            <li><a href="../../index.html" style="border-left-width:4px;" target="_blank">Home</a></li>
+            <li><a href="">Manual</a>
+              <ul>
+                <li><a href="../../manual/player.html">Player</a></li>
+                <li><a href="../../manual/creator.html">Creator</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Event</a>
+              <ul>
+                <li><a href="index.html">PBAF18</a></li>
+              </ul>
+            </li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeZqk2DXGPkEr8zFZzFIHFz_XeUsp9y4tHUv9rjK4_Jqr-A3g/viewform?usp=sf_link" target="_blank">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>Plate Beats <span style="color:orange;">Autumn Festival</span> '18</h1>
+        <hr>
+      </div>
+
+      <div id="menu">
+        <ul>
+          <li><a href="./index.html" style="border-top-width:4px; height:49px;">TOP</a></li>
+          <li><a href="./rule.html">Rule</a></li>
+          <li><a href="./works.html">Works</a></li>
+          <li><a href="./result.html">Result</a></li>
+        </ul>
+      </div>
+
+	    <div id="sentence">
+        <p style="padding-left:4px;">譜面投稿および投票に関するルール説明です。</p>
+        <div class="news">
+          <h2 style="color:green;">譜面投稿</h2>
+          <p>投稿期間内に譜面を投稿すると、大会譜面として登録されます。<br>
+          大会譜面として登録されると、特定の場所に表示されるようになり、また今大会専用のハッシュタグ
+          (<a href="https://twitter.com/search?f=tweets&vertical=default&q=%23PBAF18&src=typd">#PBAF18</a>)がリザルトに付与されます。<br>
+          また、個人作は1作に限り、投票対象譜面とすることができます(後述)。</p>
+        </div>
+        <div class="news" id="sptw">
+          <h2 style="color:yellow;">プレイヤーイベント（スピードツイスター）</h2>
+          <p>大会譜面をランダムにプレイする疑似スコアアタックを行います。<br>
+          対象譜面は「6分以内の大会譜面全て」と、「同時に公開された同曲の音楽ゲームの譜面」を予定しております。<br>
+          ただしPlateBeats以外の譜面に関してはバランスを見て決定するため、必ずしも対象とはならないことをご理解ください。<br>
+          参加方法は、開始時間に指定のチャットに入室し、参加表明をするだけです。<br>
+          お手軽でかなり盛り上がるイベントですので、ぜひご参加ください。</p>
+          <p>ルールの詳細は以下のリンクからお読みください。<br>
+          （おそらく当日にデモンストレーションの時間を取ると思うので、一度目を通して頂く程度で構いません）</p>
+          
+          <div onclick="unfold();">
+            <a style = "cursor:pointer; color:blue;">ルール詳細(クリックで展開)</a>
+          </div>
+          
+          <div id="open" style="display:none;clear:both;">   
+            <p>◎対戦の流れ</p>
+            <p>1.競技開始<br>
+            司会がチャットにて、「<i>これより○○さん vs △△さんの対戦を始めます。準備はよろしいですか？</i>」と尋ねます。各参加者はこれに何らかの応答をしてください。規定時間までに応答がない場合、棄権とみなします。<br>
+            これ以降、チャットでレスポンスする機会が多くなりますので、チャットは常に確認しておいてください。また、やむを得ない事情で離れる場合は、スタッフに一声かけていただけると助かります。素早い進行にご協力お願いします。</p>
+
+            <p>2.プレイ開始<br>
+            応答を確認したら、「<i>それでは対戦を始めてください。</i>」とのチャットが来ますので、これを確認したら、ランダムセレクタ（通称ランセレ）から譜面を引いてプレイしてください。<br>
+            プレイする譜面はランダムに選ばれますが、原則引き直しは不可です。エラーなどトラブルが発生した場合は、スタッフに報告の上再度引いてプレイしてください。<br>
+            スピード、タイミングは自由に変更して構いませんが、フェードインの変更は不可です。<p>
+
+            <p>3.プレイ終了<br>
+            プレイが終了したら、<b>リザルトのツイート画面を開き、中のリザルトをコピー</b>してください。誤ってコピーしないまま閉じてしまうとリザルトを出すことが出来なくなりますのでご注意ください。<br>
+            また、プレイおよびリザルトのコピーが終わったら、終わった旨をチャットにて報告してください。</p>
+
+            <p>4.素点報告<br>
+            司会から「<i>それではこれより、○○さんと△△さんの対戦結果を報告していただきます。３、２、１、０</i>」とチャットが来たら、コピーしたリザルトをそのままチャットに貼ってください。</br>
+            素点は、<font color="red"><b>(Perfect数)+(Good数)</b></font>で計算されます。<br>
+            ただし、<b>Accuracyが95%未満の場合、素点は強制的に0点(Failed)</b>となります。この時、AccuracyとMiss+Badの値以外は全て0となります。<br>
+            「<i>素点：○○(xxx) vs (xxxx)△△</i>」が暫定の結果となります。</p>
+
+            <p>5.チャンスカード<br>
+            素点の高い方からチャンスカードを引くことが出来ます。このチャンスカードは、ボーナス・ペナルティなど様々な効果があり、素点で負けていても逆転が可能となっています。<br>
+            「<i>△△さんはチャンスカードを1枚引くことができます。引きますか？(引く場合chanceと発言)</i>」と言われたら、引くか引かないかを返答してください。その上で、引く場合は半角英数で「<b>chance</b>」と発言してください。効果の計算はスタッフが行います。<br>
+
+            <p>6.対戦終了<br>
+            双方のチャンスカードの処理が終わったら、対戦終了です。<br>
+            「<i>結果：○○(XXXX) vs (XXX)△△　○○さんの勝ちです！</i>」と出たら対戦終了です。お疲れ様でした。</p>
+
+            <p>以上が対戦の流れになっております。<br>
+            こちらも参考にしてみてください。（ただしDancing☆Onigiriにおける説明ですので、一部異なる点があります。）<br>
+            <a href="https://cw7.sakura.ne.jp/nfes18/3-sptw.html">https://cw7.sakura.ne.jp/nfes18/3-sptw.html</a>（多鍵祭'18より）<br>
+            チャンスカードの一覧は以下のスプレッドシートにまとめましたので、興味のある方はお読みください。<br>
+            <a href="https://goo.gl/8RXgmr">チャンスカード一覧・カード細則</a></p>
+          </div> 
+
+        </div>
+        <div class="news" id="vote">
+          <h2 style="color:orange;">投票</h2>
+          <p>大会譜面の中で、良かったと思う譜面に投票することが出来ます。<br>
+          <br>
+          ・投票対象譜面<br>
+          個人制作譜面すべて。合作譜面は対象外となります。そのため、合作の場合はコメントにその旨記載してください。<br>
+          ただし個人で2作以上登録している場合、いずれか1譜面のみとなります。<br>
+          特に連絡がない場合は最後に投稿された譜面とさせていただきますので、そうでない場合は運営までお知らせください。<br>
+          また、別名義に関してはできるだけご遠慮いただけると助かります。<br>
+          <br>
+          ・投票参加者<br>
+          譜面を投稿された方すべて(個人、合作問わず)。<br>
+          ただし、HNと対象譜面の感想を付記して頂ける場合、投稿のない方でも投票にご参加頂けます。<br>
+          1人につき<b>5</b>票まで、1譜面に対し最大<b>2</b>票まで投票出来ます。<br>
+          また、5票すべて投票してくださった方には投票ボーナスとして1票が加算されます。<br>
+          投票は、サイト上部のContactを用いて行います。HNをお書きいただきますが、個人の投票内容は公表されないのでご安心ください。<br>          
+          <br>
+          ・結果発表<br>
+          投票期間終了後に、このサイトの<a href="result.html">Result</a>ページにて発表いたします。</p>
+        </div>
+      </div>
+	  </div>
+    <hr>
+    <a href="#container">TOP</a>
+  </body>
+</html>

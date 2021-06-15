@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Plate Beats</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="dmain.js"></script>
+    <script type="text/javascript" src="dcreatescore.js"></script>
+  </head>
+
+  <body onload="idJump();">
+    <div id="container">
+      <div id="title">
+        <hr>
+        <h1>Plate Beats</h1>
+        <hr>
+      </div>
+      <div id="canvasParent">
+        <canvas id="canvas" width="350" height="400"></canvas>
+        <canvas id="layer1" width="350" height="400"></canvas>
+        <canvas id="layer2" width="350" height="400"></canvas>
+      </div>
+	    <div id="sentence">
+        <hr>
+        <p>Flash非使用の音楽ゲームです.<br>
+        Google chromeで動作確認しております.<br>
+        プレイ時使用キー（左から）:SDF space JKL,リタイア:Esc,delete<br>
+        オプション画面にて曲名をクリックすると詳細情報を表示できます.<br></p>
+        <p>作譜に関するマニュアル及び投稿時の注意は<a href="manual.txt" target="_blank">こちら</a><br>
+        投稿前に必ずご確認ください.</p>
+        <p>18/4/5<br>
+        既知のバグ(修正済み)<br>
+        ・テストプレイ前後での画面フリーズ→念の為テストプレイ前にセーブをお願いします.<br>
+        ・投稿画面で他の譜面情報が出る→そのまま投稿せず,一度タブを閉じて再度投稿画面を開いてください.<br>
+        バグが発生する際はキャッシュの削除をお試しください.</p>
+        <p>18/3/2 更新<br>
+        ・譜面修正機能を追加しました.<br>
+        ・譜面への個別アクセスを出来るようにしました.<br>
+        ・Option画面においてEnterキーで開始出来るようにしました.<br>
+        検索機能はもうしばらくお待ちください.<br>
+        グラフィック面も可能な限り改善していきたいと思っております.</p>
+        <p>ご意見・ご要望及びバグ報告などは,以下にご連絡頂けると助かります.</p>
+        <p>SKB(<a href="https://twitter.com/superkuppabros" target="_blank">@superkuppabros</a>)<br>
+        mail: platebeats☆gmail.com (☆→@)
+        </p>
+        <hr>
+      </div>
+	  </div>
+  </body>
+</html>
