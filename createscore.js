@@ -1830,7 +1830,7 @@ function submitData(audio, frameData, saveD, infoD2, scr, pg) {
                   "] created by " +
                   obj.creator;
                 var encText = encodeURIComponent(tweetText);
-                var encURL = encodeURIComponent("https://platebeats.com/");
+                var encURL = encodeURIComponent("https://superkuppabros.sakura.ne.jp/");
                 window.open(
                   "http://twitter.com/share?text=" + encText + "&url=" + encURL,
                   "tweet"

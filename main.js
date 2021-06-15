@@ -804,7 +804,7 @@ function result(score){
         }
         var tweetText = head　+ pack.title + "/" + pack.creator + "/Rank:" + rank + "/" + pf + "-" + gd + "-" + bd + "-" + ms + "/" + combo + "combo/" + score + "pts./" + ac.toFixed(2) + "%";
         var encText = encodeURIComponent(tweetText);
-        var encURL = encodeURIComponent("https://platebeats.com/?id=" + pack.id);
+        var encURL = encodeURIComponent("https://superkuppabros.sakura.ne.jp/?id=" + pack.id);
         window.open("http://twitter.com/share?text=" + encText + "&url=" + encURL,"tweet");
       }else if((x > 238 && x < 345) && (y > 335 && y < 395)){
         canvas.removeEventListener("mousemove",changeColor,false);
